@@ -1,0 +1,12 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Target & Accuracy & Precision_macro & Recall_macro & F1$_{macro}$ & CV_F1$_{macro}$_mean & CV_F1$_{macro}$_std \\
+\midrule
+LogReg (std) & Rating & 0.5826 & 0.6022 & 0.5655 & 0.5778 & nan & nan \\
+\bottomrule
+\end{tabular}
+\caption{Classification with standardized features (test set). Target: Rating. CV performed on training set with 5-fold macro-F1.}
+\label{tab:auto_classification_results}
+\end{table}
