@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llrrr}
+\toprule
+Model & Target & $R^2$ & MSE & MAE \\
+\midrule
+Lasso (tuned alpha=0.002807) & EngagementLevel & 0.4565 & 1.0909 & 0.8213 \\
+Ridge (tuned alpha=62.1) & EngagementLevel & 0.4554 & 1.0931 & 0.8214 \\
+OLS & EngagementLevel & 0.4554 & 1.0932 & 0.8214 \\
+\bottomrule
+\end{tabular}
+\caption{Regression models with standardization (test set). Target: EngagementLevel. Ridge/Lasso tuned via 5-fold CV on training data.}
+\label{tab:auto_regression_results}
+\end{table}
